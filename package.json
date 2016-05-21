@@ -1,0 +1,26 @@
+{
+  "name": "tessel-toggle-power",
+  "version": "0.1.0",
+  "description": "Toggle a Tessel Relay module or Pin power On / Off",
+  "license": "MIT",
+  "author": "Gabriel Dibble <gdibble@gmail.com>",
+  "contributors": [{
+    "name": "Gabriel Dibble",
+    "email": "gdibble@gmail.com"
+  }],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdibble/tessel-toggle-power"
+  },
+  "bugs": {
+    "url": "https://github.com/gdibble/tessel-toggle-power/issues"
+  },
+  "keywords": [
+    "Tessel",
+    "Tessel 2",
+    "toggle",
+    "relay",
+    "pin"
+  ]
+}
