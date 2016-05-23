@@ -1,6 +1,6 @@
 {
   "name": "tessel-toggle-power",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Toggle a Tessel Relay module or Pin power On / Off",
   "license": "MIT",
   "author": "Gabriel Dibble <gdibble@gmail.com>",

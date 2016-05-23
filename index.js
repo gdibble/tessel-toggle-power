@@ -46,17 +46,10 @@ var togglePower = function togglePower() {
 // Pin Read Callback which performs toggling mechanism in pin-mode
 // * when 0 => turn On, when 1 => turn Off
 var pinReadCallbackToToggle = function pinReadCallbackToToggle(error, value) {
-  var turnOff = function turnOff() {
-    this.pin.output(0);
-  };
-  // print the pin value to the console
-  console.log('\npin.read():', value);
-  if (value) {
-    console.log('\nNow toggling...\n');
-    setTimeout(turnOff.bind(this), 750);
-  } else {
-    this.pin.output(1); //turn On
-  }
+  var inverted = value ? 0 : 1;                                  // Invert value
+  this.debug ? console.log('\npin.read()  =>', value) : null;    // Debug Output
+  this.pin.output(inverted);                                     // Set new value
+  this.debug ? console.log('\npin set     =>', inverted) : null; // Debug Output
 };
 
 // Gets an ISO formattted date
